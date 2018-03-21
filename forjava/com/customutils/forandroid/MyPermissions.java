@@ -1,4 +1,4 @@
-﻿package com.customutils.forandroid;
+package com.customutils.forandroid;
 
 import android.app.Activity;
 import android.content.Context;
@@ -40,6 +40,10 @@ public class MyPermissions {
         this.activity = activity;
     }
 
+	/**
+     * 通过处理权限数组进行动态权限获取
+     * @param permissions   Manifest.permission
+     */
     public void requestPermission(String[] permissions) {
         if (Build.VERSION.SDK_INT >= 23) {
             int REQUEST_CODE_CONTACT = 101;
